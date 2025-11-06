@@ -46,7 +46,7 @@
   </a>
 
 - **[2025-11-05]** Released our **evaluation code** built on **LightEval**  
-  → [`ssft/eval/`](./ssft/eval/) · [`scripts/eval_all.sh`](./scripts/eval_all.sh)
+  → [`lighteval`](./lighteval) · [`ssft_eval.sh`](./ssft_eval.sh) · [`grpo_ssft_eval.sh`](./grpo_ssft_eval.sh)
 
 - **[2025-10-01]** arXiv preprint released: **“Training LLMs to Reason in Parallel with Global Forking Tokens”** → https://arxiv.org/abs/2510.05132
 
