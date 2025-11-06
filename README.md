@@ -98,8 +98,8 @@
 > **Note (Compute & runtime):** We used a single AWS EC2 instance **p6-b200.48xlarge** (8× **B200** GPUs) to conduct both **SSFT-32B** training and evaluation. Training took ~**6 hours** end-to-end, and evaluation for each task took roughly **1.5–2 hours**.
 ### Environment
 ```bash
-git clone https://github.com/Sheng-J/SSFT-Set-Supervised-Fine-Tuning.git
-cd SSFT-Set-Supervised-Fine-Tuning
+git clone https://github.com/Sheng-J/SSFT.git
+cd SSFT
 uv venv ssft_env --python 3.11 && source ssft_env/bin/activate && uv pip install --upgrade pip
 uv pip install torch==2.7.0 --index-url https://download.pytorch.org/whl/cu128
 uv pip install -r requirements.txt
