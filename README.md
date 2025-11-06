@@ -85,8 +85,9 @@
 
 ## Release List
 - [x] **Checkpoint: ssft-32B HF repo** 
-- [x] **Evaluation script for ssft-32B**
-- [ ] **Training script for ssft-32B**
+- [x] **Code for evaluating ssft-32B**
+- [ ] **Code for training ssft-32B**
+- [ ] **Code for additional RFT ssft-32B -> grpo-ssft-32B**
 - [ ] **More detailed instructions on both training and evaluation**
 - [x] **Checkpoint: grpo-test-ssft-32B**
 - [ ] **Checkpoint: grpo-ssft-32B**
