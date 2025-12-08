@@ -19,8 +19,8 @@
   </a>
 
   <!-- HF model: GRPO (SSFT-32B) 10 extra steps -->
-  <a href="https://huggingface.co/shengjia-toronto/grpo-test-ssft-32B" title="Hugging Face: GRPO (SSFT-32B)">
-    <img src="https://img.shields.io/badge/Hugging%20Face-GRPO%20Test%20(SSFT--32B)-blue?logo=huggingface&logoColor=white&style=flat" alt="Hugging Face — GRPO (SSFT-32B) 10 steps" />
+  <a href="https://huggingface.co/shengjia-toronto/ssft32b_grpo_bs256_step10" title="Hugging Face: GRPO (SSFT-32B)">
+    <img src="https://img.shields.io/badge/Hugging%20Face-GRPO%20(SSFT--32B)-blue?logo=huggingface&logoColor=white&style=flat" alt="Hugging Face — GRPO (SSFT-32B) 10 steps" />
   </a>
 </p>
 
@@ -44,7 +44,7 @@
 
 - **[2025-12-08]** Released checkpoints  
   <a href="https://huggingface.co/shengjia-toronto/ssft32b_grpo_bs256_step10" title="Hugging Face: (Stage 2, only 10 RL steps on global forking tokens) (GRPO-SSFT-32B-10steps)">
-    <img src="https://img.shields.io/badge/Hugging%20Face-GRPO%20Test%20(SSFT--32B)-blue?logo=huggingface&logoColor=white&style=flat" alt="Hugging Face — GRPO Test (SSFT-32B)" />
+    <img src="https://img.shields.io/badge/Hugging%20Face-GRPO%20(SSFT--32B)-blue?logo=huggingface&logoColor=white&style=flat" alt="Hugging Face — GRPO Test (SSFT-32B)" />
   </a>
 
 - **[2025-11-05]** Released checkpoints  
