@@ -72,7 +72,7 @@
 ---
 
 ## Results
-> **Note:** When evaluating **SSFT-32B** ([🤗 HF link](https://huggingface.co/shengjia-toronto/ssft-32B-N6)), use `<think1>` for **Pass@1**, and use the set `<think1>...<think6>` (parallel generations) for **Cons@k**. Our custom **LightEval** code inserts these tags automatically. If you’re using other frameworks and don’t want to manage `<think i>` prompting, try our **GRPO fine-tuned** model ([🤗 HF link](https://huggingface.co/shengjia-toronto/ssft32b_grpo_bs256_step10)), which uses RL to only optimize global forking tokens for selecting the optimal tag per question (very efficient with some data from DAPO-17k).
+> **Note:** When evaluating **SSFT-32B** ([🤗 HF link](https://huggingface.co/shengjia-toronto/ssft-32B-N6)), use `<think1>` for **Pass@1**, and use the set `<think1>...<think6>` (parallel generations) for **Cons@k**. Our custom **LightEval** code inserts these tags automatically. If you’re using other frameworks and don’t want to manage `<think i>` prompting, try our **GRPO fine-tuned** model ([🤗 HF link](https://huggingface.co/shengjia-toronto/ssft32b_grpo_bs256_step10)), which uses RL to only optimize global forking tokens for selecting the optimal tag per question (very efficient with 1k data from DAPO-17k).
 
 
 ### Pass@1: Average performance of individual generations (\<think1\> prompted)
@@ -96,6 +96,7 @@
 ## Release List
 - [x] **Checkpoint: ssft-32B HF repo** 
 - [x] **Code for evaluating ssft-32B**
+- [ ] **Evaluation script with tensor parallel so >100GB VRAM per worker is not required**
 - [ ] **Code for training ssft-32B**
 - [ ] **Code for additional RFT ssft-32B -> grpo-ssft-32B**
 - [ ] **More detailed instructions on both training and evaluation**
