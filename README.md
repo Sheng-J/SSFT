@@ -17,6 +17,11 @@
   <a href="https://huggingface.co/shengjia-toronto/grpo-test-ssft-32B" title="Hugging Face: GRPO Test (SSFT-32B)">
     <img src="https://img.shields.io/badge/Hugging%20Face-GRPO%20Test%20(SSFT--32B)-blue?logo=huggingface&logoColor=white&style=flat" alt="Hugging Face — GRPO Test (SSFT-32B)" />
   </a>
+
+  <!-- HF model: GRPO (SSFT-32B) 10 extra steps -->
+  <a href="https://huggingface.co/shengjia-toronto/grpo-test-ssft-32B" title="Hugging Face: GRPO (SSFT-32B)">
+    <img src="https://img.shields.io/badge/Hugging%20Face-GRPO%20Test%20(SSFT--32B)-blue?logo=huggingface&logoColor=white&style=flat" alt="Hugging Face — GRPO (SSFT-32B) 10 steps" />
+  </a>
 </p>
 
 
@@ -36,6 +41,11 @@
 ---
 
 ## Updates
+
+- **[2025-12-08]** Released checkpoints  
+  <a href="https://huggingface.co/shengjia-toronto/ssft32b_grpo_bs256_step10" title="Hugging Face: (Stage 2, only 10 RL steps on global forking tokens) (GRPO-SSFT-32B-10steps)">
+    <img src="https://img.shields.io/badge/Hugging%20Face-GRPO%20Test%20(SSFT--32B)-blue?logo=huggingface&logoColor=white&style=flat" alt="Hugging Face — GRPO Test (SSFT-32B)" />
+  </a>
 
 - **[2025-11-05]** Released checkpoints  
   <a href="https://huggingface.co/shengjia-toronto/ssft-32B-N6" title="Hugging Face: (Stage 1) SSFT-32B-N6">
@@ -62,7 +72,7 @@
 ---
 
 ## Results
-> **Note:** When evaluating **SSFT-32B** ([🤗 HF link](https://huggingface.co/shengjia-toronto/ssft-32B-N6)), use `<think1>` for **Pass@1**, and use the set `<think1>...<think6>` (parallel generations) for **Cons@k**. Our custom **LightEval** code inserts these tags automatically. If you’re using other frameworks and don’t want to manage `<think i>` prompting, try our **GRPO fine-tuned** model ([🤗 HF link](https://huggingface.co/shengjia-toronto/grpo-test-ssft-32B)), which uses RL to only optimize global forking tokens for selecting the optimal tag per question (very efficient with some data from DAPO-17k).
+> **Note:** When evaluating **SSFT-32B** ([🤗 HF link](https://huggingface.co/shengjia-toronto/ssft-32B-N6)), use `<think1>` for **Pass@1**, and use the set `<think1>...<think6>` (parallel generations) for **Cons@k**. Our custom **LightEval** code inserts these tags automatically. If you’re using other frameworks and don’t want to manage `<think i>` prompting, try our **GRPO fine-tuned** model ([🤗 HF link](https://huggingface.co/shengjia-toronto/ssft32b_grpo_bs256_step10)), which uses RL to only optimize global forking tokens for selecting the optimal tag per question (very efficient with some data from DAPO-17k).
 
 
 ### Pass@1: Average performance of individual generations (\<think1\> prompted)
@@ -90,6 +100,7 @@
 - [ ] **Code for additional RFT ssft-32B -> grpo-ssft-32B**
 - [ ] **More detailed instructions on both training and evaluation**
 - [x] **Checkpoint: grpo-test-ssft-32B**
+- [x] **Checkpoint: gfpo-ssft-32B-bs256-step10**
 - [ ] **Checkpoint: grpo-ssft-32B**
 
 
