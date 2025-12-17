@@ -73,7 +73,7 @@
 ---
 
 ## Results
-> **Note:** When evaluating **SSFT-32B** ([🤗 HF link](https://huggingface.co/shengjia-toronto/ssft-32B-N6)), use `<think1>` for **Pass@1**, and use the set `<think1>...<think6>` (parallel generations) for **Cons@k**. Our custom **LightEval** code inserts these tags automatically. If you’re using other frameworks and don’t want to manage `<think i>` prompting, try our **GRPO fine-tuned** model ([🤗 HF link](https://huggingface.co/shengjia-toronto/ssft32b_grpo_bs256_step10)), which uses RL to only optimize global forking tokens for selecting the optimal tag per question (very efficient with 1k data from DAPO-17k).  SSFT-GRPO models can sample the optimal think tag, so you can just run them directly for your questions.
+> **Note:** When evaluating **SSFT-32B** ([🤗 HF link](https://huggingface.co/shengjia-toronto/ssft-32B-N6)), use `<think1>` for **Pass@1**, and use the set `<think1>...<think6>` (parallel generations) for **Cons@k**. Our custom **LightEval** code inserts these tags automatically. If you’re using other frameworks and don’t want to manage `<think i>` prompting, try our **GRPO fine-tuned** model ([🤗 HF link](https://huggingface.co/shengjia-toronto/ssft32b_grpo_bs256_step10)), which uses RL to only optimize global forking tokens for selecting the optimal tag per question (very efficient with 1k data from DAPO-17k).  SSFT-GRPO models can sample the optimal think tag for your questions, so you can just run them directly.
 
 
 ### Pass@1: Average performance of individual generations (\<think1\> prompted)
