@@ -42,6 +42,8 @@
 
 ## Updates
 
+- **[Contact]** If you have questions or are interested in collaborating, feel free to reach out to me at <sheng.jia@mail.utoronto.ca>. I’ll be actively updating this repository with code, documentation, and new checkpoints.
+
 - **[2025-12-08]** Released checkpoints  
   <a href="https://huggingface.co/shengjia-toronto/ssft32b_grpo_bs256_step10" title="Hugging Face: (Stage 2, only 10 RL steps on global forking tokens) (GRPO-SSFT-32B-10steps)">
     <img src="https://img.shields.io/badge/Hugging%20Face-GRPO%20(SSFT--32B)-blue?logo=huggingface&logoColor=white&style=flat" alt="Hugging Face — GRPO Test (SSFT-32B)" />
@@ -60,7 +62,6 @@
 
 - **[2025-10-01]** arXiv preprint released: **“Training LLMs to Reason in Parallel with Global Forking Tokens”** → https://arxiv.org/abs/2510.05132
 
-- **[Contact]** If you have questions or are interested in collaborating, feel free to reach out to me at <sheng.jia@mail.utoronto.ca>. I’ll be actively updating this repository with code, documentation, and new checkpoints.
 ---
 
 ## Set Supervised Fine-Tuning
@@ -72,7 +73,7 @@
 ---
 
 ## Results
-> **Note:** When evaluating **SSFT-32B** ([🤗 HF link](https://huggingface.co/shengjia-toronto/ssft-32B-N6)), use `<think1>` for **Pass@1**, and use the set `<think1>...<think6>` (parallel generations) for **Cons@k**. Our custom **LightEval** code inserts these tags automatically. If you’re using other frameworks and don’t want to manage `<think i>` prompting, try our **GRPO fine-tuned** model ([🤗 HF link](https://huggingface.co/shengjia-toronto/ssft32b_grpo_bs256_step10)), which uses RL to only optimize global forking tokens for selecting the optimal tag per question (very efficient with 1k data from DAPO-17k).
+> **Note:** When evaluating **SSFT-32B** ([🤗 HF link](https://huggingface.co/shengjia-toronto/ssft-32B-N6)), use `<think1>` for **Pass@1**, and use the set `<think1>...<think6>` (parallel generations) for **Cons@k**. Our custom **LightEval** code inserts these tags automatically. If you’re using other frameworks and don’t want to manage `<think i>` prompting, try our **GRPO fine-tuned** model ([🤗 HF link](https://huggingface.co/shengjia-toronto/ssft32b_grpo_bs256_step10)), which uses RL to only optimize global forking tokens for selecting the optimal tag per question (very efficient with 1k data from DAPO-17k).  SSFT-GRPO models can sample the optimal think tag, so you can just run them directly for your questions.
 
 
 ### Pass@1: Average performance of individual generations (\<think1\> prompted)
